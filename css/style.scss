@@ -1,0 +1,541 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.d-flex {
+  display: flex;
+}
+// body {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   padding: 0px;
+//   isolation: isolate;
+
+//   position: relative;
+//   width: 1918px;
+//   height: 4360px;
+//   overflow-y: scroll;
+//   wrapper{
+//     position: absolute;
+// width: 1440px;
+// height: 4338px;
+// left: calc(50% - 1440px/2);
+// top: 0px;
+//   }
+// }
+wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 1918px;
+  height: 4360px;
+  section {
+    container {
+      // position: absolute;
+      width: 1440px;
+
+      left: calc(50% - 1440px / 2);
+      top: 0px;
+    }
+  }
+}
+#main {
+  width: 1918px;
+  height: 822px;
+
+  border-radius: 0px 0px 64px 64px;
+
+  background-image: url("../img/bg-image.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  header {
+    color: #fff;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 32px;
+    #main-menu ul {
+      display: flex;
+      opacity: 0.7;
+      li {
+        padding: 0 24px;
+      }
+    }
+    .logo {
+      position: relative;
+      .logo-img {
+        width: 67.57px;
+        height: 19.42px;
+      }
+      .logo-arrow {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: -5px;
+      }
+    }
+    #user {
+      display: flex;
+      position: relative;
+      > div {
+        margin-right: 8px;
+        text-align: right;
+      }
+
+      .user-text1 {
+        opacity: 0.5;
+      }
+      .user-text2 {
+        font-weight: 500;
+      }
+      .user-img {
+        width: 48px;
+        height: 48px;
+
+        border-radius: 999px;
+      }
+      .user-dot {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        right: 0px;
+        top: 0px;
+        border: 1px solid #161414;
+        border-radius: 12px;
+      }
+    }
+  }
+  #cta {
+    height: 534px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 62px;
+      color: white;
+    }
+    button {
+      margin-top: 32px;
+      background: #7b61ff;
+      border-radius: 12px;
+      display: flex;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      padding: 27px 24px;
+      > span {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  #row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 130px;
+    .row-box {
+      width: 1140px;
+      height: 88px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      div {
+        display: flex;
+        align-items: center;
+        &::after {
+          content: "";
+        }
+        img {
+          padding-left: 16px;
+        }
+        span {
+          display: flex;
+          flex-direction: column;
+          padding: 16px 20px;
+          label {
+            color: #979797;
+          }
+          input {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161414;
+            border: none;
+          }
+        }
+      }
+      button {
+        background: #7b61ff;
+        border-radius: 12px;
+        margin: 14px 8px;
+        img {
+          width: 24px;
+          height: 24px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+#popular {
+  padding: 120px 0px;
+  gap: 10px;
+
+  container {
+    display: flex;
+    flex-direction: column;
+    .popular-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 64px;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #161414;
+      }
+      > div {
+        background: #f6f4ff;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          display: flex;
+          font-size: 16px;
+          line-height: 16px;
+          color: #7b61ff;
+        }
+      }
+    }
+    .popular-box {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          img {
+            width: 200px;
+            height: 180px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            p {
+              color: #979797;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#hotels {
+  padding: 0px 0px 120px;
+  container {
+    display: flex;
+    flex-direction: column;
+    .hotels-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 64px;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #161414;
+      }
+      div {
+        background: #f6f4ff;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          display: flex;
+          font-size: 16px;
+          line-height: 16px;
+          color: #7b61ff;
+        }
+      }
+    }
+    .hotels-box {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          img {
+            width: 316px;
+            height: 380px;
+            border-radius: 12px;
+          }
+          div {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161414;
+            span {
+              display: flex;
+              justify-content: space-between;
+              div {
+                color: #979797;
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#travel {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 120px;
+  container {
+    display: flex;
+    flex-direction: column;
+    .travel-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 64px;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #161414;
+      }
+      div {
+        background: #f6f4ff;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          display: flex;
+          font-size: 16px;
+          line-height: 16px;
+          color: #7b61ff;
+        }
+      }
+    }
+    .travel-box {
+      display: flex;
+      justify-content: space-between;
+      > div {
+        display: flex;
+
+        .travel-img1 {
+          background-image: url("../img/travel/icecream.png");
+          width: 316px;
+          height: 380px;
+          border-radius: 24px;
+        }
+        .travel-img2 {
+          background-image: url("../img/travel/bridge.png");
+          width: 316px;
+          height: 380px;
+          border-radius: 24px;
+        }
+      }
+      .travel-textbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 348px;
+        height: 380px;
+        padding: 0px 0px 0px 32px;
+
+        h1 {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          color: #161414;
+          width: 316px;
+          height: 124px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #979797;
+          width: 316px;
+          height: 144px;
+        }
+        .post-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+          > div {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+#activities {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 120px;
+  container {
+    display: flex;
+    flex-direction: column;
+    .active-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 64px;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #161414;
+      }
+      div {
+        background: #f6f4ff;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          display: flex;
+          font-size: 16px;
+          line-height: 16px;
+          color: #7b61ff;
+        }
+      }
+    }
+    .active-box {
+      display: flex;
+      justify-content: space-between;
+      .sailing {
+        position: relative;
+        background-image: url("../img/activities/Sailing.png");
+        width: 316px;
+        height: 380px;
+        border-radius: 12px;
+        &::after {
+          content: "Sailing";
+          position: absolute;
+          top: 396px;
+        }
+      }
+      .climbing {
+        position: relative;
+        background-image: url("../img/activities/Climbing.png");
+        width: 316px;
+        height: 380px;
+        border-radius: 12px;
+        &::after {
+          content: "Climbing";
+          position: absolute;
+          top: 396px;
+        }
+      }
+      .skiing {
+        position: relative;
+        background-image: url("../img/activities/Skiing.png");
+        width: 316px;
+        height: 380px;
+        border-radius: 12px;
+        &::after {
+          content: "Skiing";
+          position: absolute;
+          top: 396px;
+        }
+      }
+      .hiking {
+        position: relative;
+        background-image: url("../img/activities/Hiking.png");
+        width: 316px;
+        height: 380px;
+        border-radius: 12px;
+        &::after {
+          content: "Hiking";
+          position: absolute;
+          top: 396px;
+        }
+      }
+    }
+  }
+}
+#about {
+  padding: 0px 0px 120px;
+  container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about-text {
+      width: 548px;
+      height: 312px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 60px;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #161414;
+      }
+      p {
+        font-size: 16px;
+        line-height: 32px;
+        color: #5b5b5b;
+      }
+      .about-button {
+        width: 133px;
+        height: 40px;
+        background: #f6f4ff;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: 16px;
+          line-height: 16px;
+          color: #7b61ff;
+          display: flex;
+          img {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    .about-img {
+      background-image: url("../img/about/image\ 23.png");
+      width: 556px;
+      height: 488px;
+      border-radius: 24px;
+    }
+  }
+}
