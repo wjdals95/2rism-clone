@@ -12,40 +12,19 @@ a {
   text-decoration: none;
   color: white;
 }
-.d-flex {
-  display: flex;
-}
-// body {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: flex-start;
-//   padding: 0px;
-//   isolation: isolate;
 
-//   position: relative;
-//   width: 1918px;
-//   height: 4360px;
-//   overflow-y: scroll;
-//   wrapper{
-//     position: absolute;
-// width: 1440px;
-// height: 4338px;
-// left: calc(50% - 1440px/2);
-// top: 0px;
-//   }
-// }
 wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
 
-  width: 1918px;
-  height: 4360px;
+  width: 100vw;
+
   section {
     container {
       // position: absolute;
-      width: 1440px;
+      width: 85vw;
 
       left: calc(50% - 1440px / 2);
       top: 0px;
@@ -53,21 +32,21 @@ wrapper {
   }
 }
 #main {
-  width: 1918px;
-  height: 822px;
+  width: 100vw;
+  height: 100vh;
 
   border-radius: 0px 0px 64px 64px;
 
   background-image: url("../img/bg-image.png");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   header {
     color: #fff;
     display: flex;
 
     justify-content: space-around;
     align-items: center;
-    padding-top: 32px;
+    padding: 32px 5vw 0 5vw;
     #main-menu ul {
       display: flex;
       opacity: 0.7;
@@ -120,7 +99,7 @@ wrapper {
     }
   }
   #cta {
-    height: 534px;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,6 +112,7 @@ wrapper {
     }
     button {
       margin-top: 32px;
+      color: #fff;
       background: #7b61ff;
       border-radius: 12px;
       display: flex;
@@ -152,20 +132,17 @@ wrapper {
     align-items: center;
     padding-bottom: 130px;
     .row-box {
-      width: 1140px;
-      height: 88px;
+      width: 80vw;
+
       background: #ffffff;
       border-radius: 12px;
-      padding: 8px;
+    
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-around;
       div {
         display: flex;
         align-items: center;
-        &::after {
-          content: "";
-        }
         img {
           padding-left: 16px;
         }
@@ -189,6 +166,7 @@ wrapper {
         background: #7b61ff;
         border-radius: 12px;
         margin: 14px 8px;
+        
         img {
           width: 24px;
           height: 24px;
@@ -223,9 +201,11 @@ wrapper {
         align-items: center;
         a {
           display: flex;
+          align-items: center;
           font-size: 16px;
           line-height: 16px;
           color: #7b61ff;
+          padding: 10px;
         }
       }
     }
@@ -236,8 +216,8 @@ wrapper {
         align-items: center;
         li {
           img {
-            width: 200px;
-            height: 180px;
+            width: 13vw;
+            height: 25vh;
             border-radius: 12px;
             margin-bottom: 8px;
           }
@@ -277,9 +257,11 @@ wrapper {
         align-items: center;
         a {
           display: flex;
+          align-items: center;
           font-size: 16px;
           line-height: 16px;
           color: #7b61ff;
+          padding: 10px;
         }
       }
     }
@@ -290,8 +272,8 @@ wrapper {
         align-items: center;
         li {
           img {
-            width: 316px;
-            height: 380px;
+            width: 20vw;
+            height: 50vh;
             border-radius: 12px;
           }
           div {
@@ -304,9 +286,10 @@ wrapper {
               justify-content: space-between;
               div {
                 color: #979797;
+                font-size: 14px;
                 img {
-                  width: 16px;
-                  height: 16px;
+                  width: 12px;
+                  height: 12px;
                 }
               }
             }
@@ -341,9 +324,11 @@ wrapper {
         align-items: center;
         a {
           display: flex;
+          align-items: center;
           font-size: 16px;
           line-height: 16px;
           color: #7b61ff;
+          padding: 10px;
         }
       }
     }
@@ -355,48 +340,49 @@ wrapper {
 
         .travel-img1 {
           background-image: url("../img/travel/icecream.png");
-          width: 316px;
-          height: 380px;
+          background-position: center;
+          width: 20vw;
+          height: 52vh;
           border-radius: 24px;
         }
         .travel-img2 {
           background-image: url("../img/travel/bridge.png");
-          width: 316px;
-          height: 380px;
+          background-position: center;
+          width: 20vw;
+          height: 52vh;
           border-radius: 24px;
         }
       }
       .travel-textbox {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         align-content: space-between;
-        width: 348px;
-        height: 380px;
-        padding: 0px 0px 0px 32px;
+        width: 21vw;
+        margin: 0px 32px;
 
         h1 {
           font-weight: 600;
           font-size: 24px;
           line-height: 36px;
           color: #161414;
-          width: 316px;
-          height: 124px;
         }
         p {
           font-size: 16px;
           line-height: 24px;
           color: #979797;
-          width: 316px;
-          height: 144px;
         }
         .post-info {
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-right: 15px;
           > div {
             margin-right: 25px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 5px;
+            }
           }
         }
       }
@@ -428,20 +414,25 @@ wrapper {
         align-items: center;
         a {
           display: flex;
+          align-items: center;
           font-size: 16px;
           line-height: 16px;
           color: #7b61ff;
+          padding: 10px;
         }
       }
     }
     .active-box {
       display: flex;
       justify-content: space-between;
+      div {
+        width: 20vw;
+        height: 50vh;
+        background-position: center;
+      }
       .sailing {
         position: relative;
         background-image: url("../img/activities/Sailing.png");
-        width: 316px;
-        height: 380px;
         border-radius: 12px;
         &::after {
           content: "Sailing";
@@ -452,8 +443,6 @@ wrapper {
       .climbing {
         position: relative;
         background-image: url("../img/activities/Climbing.png");
-        width: 316px;
-        height: 380px;
         border-radius: 12px;
         &::after {
           content: "Climbing";
@@ -464,8 +453,6 @@ wrapper {
       .skiing {
         position: relative;
         background-image: url("../img/activities/Skiing.png");
-        width: 316px;
-        height: 380px;
         border-radius: 12px;
         &::after {
           content: "Skiing";
@@ -476,8 +463,6 @@ wrapper {
       .hiking {
         position: relative;
         background-image: url("../img/activities/Hiking.png");
-        width: 316px;
-        height: 380px;
         border-radius: 12px;
         &::after {
           content: "Hiking";
@@ -495,8 +480,8 @@ wrapper {
     justify-content: center;
     align-items: center;
     .about-text {
-      width: 548px;
-      height: 312px;
+      width: 38vw;
+      height: 45vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -506,11 +491,13 @@ wrapper {
         font-size: 32px;
         line-height: 48px;
         color: #161414;
+        margin-bottom: 32px;
       }
       p {
         font-size: 16px;
         line-height: 32px;
         color: #5b5b5b;
+        margin-bottom: 32px;
       }
       .about-button {
         width: 133px;
@@ -525,6 +512,8 @@ wrapper {
           line-height: 16px;
           color: #7b61ff;
           display: flex;
+          align-items: center;
+
           img {
             padding-left: 5px;
           }
@@ -533,9 +522,124 @@ wrapper {
     }
     .about-img {
       background-image: url("../img/about/image\ 23.png");
-      width: 556px;
-      height: 488px;
+      background-position: center;
+      width: 35vw;
+      height: 65vh;
       border-radius: 24px;
+    }
+  }
+}
+#footer {
+  background: #f9f9f9;
+  width: 100vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  container {
+    row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      .foot-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20vw;
+        .logo {
+          position: relative;
+          margin-bottom: 35px;
+          .logo-img {
+            width: 67.57px;
+            height: 19.42px;
+          }
+          .logo-arrow {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: -5px;
+          }
+          p {
+            color: #979797;
+            margin-top: 24px;
+          }
+        }
+
+        .social {
+          width: 160px;
+          height: 32px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+      .foot-md {
+        width: 30vw;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 28px;
+          color: #161414;
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            color: #979797;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      .foot-right {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 28px;
+          color: #161414;
+          margin-bottom: 20px;
+        }
+        .foot-input {
+          display: flex;
+          justify-content: space-between;
+          .foot-input-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 300px;
+            height: 72px;
+            background: #ffffff;
+            border-radius: 12px;
+            margin-right: 16px;
+            img {
+              margin: 0 18px;
+            }
+          }
+          .foot-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            input {
+              border: none;
+            }
+          }
+        }
+        .foot-btns {
+          width: 72px;
+          height: 72px;
+          background: #7b61ff;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
     }
   }
 }
