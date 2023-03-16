@@ -57,12 +57,12 @@ wrapper {
     .logo {
       position: relative;
       .logo-img {
-        width: 67.57px;
-        height: 19.42px;
+        width: 5vw;
+        height: 3vh;
       }
       .logo-arrow {
-        width: 16px;
-        height: 16px;
+        width: 1vw;
+        height: 2vh;
         position: absolute;
         top: -5px;
       }
@@ -82,8 +82,8 @@ wrapper {
         font-weight: 500;
       }
       .user-img {
-        width: 48px;
-        height: 48px;
+        width: 3vw;
+        height: 6vh;
 
         border-radius: 999px;
       }
@@ -136,7 +136,7 @@ wrapper {
 
       background: #ffffff;
       border-radius: 12px;
-    
+
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -166,7 +166,7 @@ wrapper {
         background: #7b61ff;
         border-radius: 12px;
         margin: 14px 8px;
-        
+
         img {
           width: 24px;
           height: 24px;
@@ -337,21 +337,25 @@ wrapper {
       justify-content: space-between;
       > div {
         display: flex;
-
-        .travel-img1 {
-          background-image: url("../img/travel/icecream.png");
-          background-position: center;
-          width: 20vw;
-          height: 52vh;
-          border-radius: 24px;
-        }
-        .travel-img2 {
-          background-image: url("../img/travel/bridge.png");
-          background-position: center;
-          width: 20vw;
-          height: 52vh;
-          border-radius: 24px;
-        }
+        
+          
+          .travel-img1 {
+            background-image: url("../img/travel/icecream.png");
+            background-position: center;
+          background-repeat: no-repeat;
+            width: 20vw;
+            height: 52vh;
+            border-radius: 24px;
+          }
+          .travel-img2 {
+            background-image: url("../img/travel/bridge.png");
+            background-position: center;
+          background-repeat: no-repeat;
+            width: 20vw;
+            height: 52vh;
+            border-radius: 24px;
+          }
+        
       }
       .travel-textbox {
         display: flex;
@@ -429,10 +433,12 @@ wrapper {
         width: 20vw;
         height: 50vh;
         background-position: center;
+        background-repeat: no-repeat;
       }
       .sailing {
         position: relative;
         background-image: url("../img/activities/Sailing.png");
+        
         border-radius: 12px;
         &::after {
           content: "Sailing";
@@ -523,6 +529,7 @@ wrapper {
     .about-img {
       background-image: url("../img/about/image\ 23.png");
       background-position: center;
+      background-repeat: no-repeat;
       width: 35vw;
       height: 65vh;
       border-radius: 24px;

@@ -53,12 +53,12 @@ wrapper section container {
   position: relative;
 }
 #main header .logo .logo-img {
-  width: 67.57px;
-  height: 19.42px;
+  width: 5vw;
+  height: 3vh;
 }
 #main header .logo .logo-arrow {
-  width: 16px;
-  height: 16px;
+  width: 1vw;
+  height: 2vh;
   position: absolute;
   top: -5px;
 }
@@ -77,8 +77,8 @@ wrapper section container {
   font-weight: 500;
 }
 #main header #user .user-img {
-  width: 48px;
-  height: 48px;
+  width: 3vw;
+  height: 6vh;
   border-radius: 999px;
 }
 #main header #user .user-dot {
@@ -326,6 +326,7 @@ wrapper section container {
 #travel container .travel-box > div .travel-img1 {
   background-image: url("../img/travel/icecream.png");
   background-position: center;
+  background-repeat: no-repeat;
   width: 20vw;
   height: 52vh;
   border-radius: 24px;
@@ -333,6 +334,7 @@ wrapper section container {
 #travel container .travel-box > div .travel-img2 {
   background-image: url("../img/travel/bridge.png");
   background-position: center;
+  background-repeat: no-repeat;
   width: 20vw;
   height: 52vh;
   border-radius: 24px;
@@ -413,6 +415,7 @@ wrapper section container {
   width: 20vw;
   height: 50vh;
   background-position: center;
+  background-repeat: no-repeat;
 }
 #activities container .active-box .sailing {
   position: relative;
@@ -506,6 +509,7 @@ wrapper section container {
 #about container .about-img {
   background-image: url("../img/about/image 23.png");
   background-position: center;
+  background-repeat: no-repeat;
   width: 35vw;
   height: 65vh;
   border-radius: 24px;
